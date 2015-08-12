@@ -1,0 +1,13 @@
+<p>Delete Product</p>
+<input type = 'text' placeholder="Type Product Name" ng-model="product"><button type="submit" class="btn btn-default" ng-click=deleteProduct(product)></button>
+
+<p>Add Product</p>
+<div ng-model=addProduct>
+
+<input type ='text' placeholder="Type Product Name" ng-model=addProduct.product>
+<input type ='text' placeholder="Type Color" ng-model=addProduct.color>
+<input type ='text' placeholder="Type Size" ng-model=addProduct.size>
+<input type ='text' placeholder="Type Cost" ng-model=addProduct.cost>
+<button type="submit" class="btn btn-default" ng-click=postProduct(addProduct)></button>
+
+</div>

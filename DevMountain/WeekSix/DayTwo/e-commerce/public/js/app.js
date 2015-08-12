@@ -6,4 +6,8 @@ app.config(function($routeProvider) {
       templateUrl: 'template/home.html',
       controller: 'mainCtrl'
     })
+    .when('/backend', {
+      templateUrl: 'template/backend.html',
+      controller: 'backendCtrl'
+    })
 })

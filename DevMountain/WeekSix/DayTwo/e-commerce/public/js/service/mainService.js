@@ -18,6 +18,21 @@ app.service('mainService', function($http, $q) {
       // return deferred.promise;
   };
 
+  this.deleteProduct = function(product) {
+    return $http({
+      url: 'http://localhost:8080/api/shops?product=' + product,
+      method: 'DELETE'
+    })
+  };
+
+  this.postProduct = function(data) {
+    console.log('this is in postProduct', data);
+    return $http({
+      url: 'http://localhost:8080/api/shops',
+      method: 'POST',
+      data: data
+    })
+  }
 
   //end service
 })
