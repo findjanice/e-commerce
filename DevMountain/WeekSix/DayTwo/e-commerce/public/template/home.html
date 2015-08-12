@@ -1,6 +1,12 @@
-{{test}}
 
-<div ng-repeat="product in getProduct">
 
-  {{product}}
+<div ng-repeat="product in products">
+
+  product: {{product.product}}<br>
+  color: {{product.color}}<br>
+  size: {{product.size}}<br>
+  cost: ${{product.cost}}
+
+<hr>
+
 </div>
